@@ -44,19 +44,20 @@ CSS – Styling, layout, and user-friendly interface.
 📌 How to Use
 
 Clone the repository:
-sh
-Copy
-Edit
-git clone https://github.com/your-repo-link.git
+https://github.com/PranavHendre02/Exam-registration.git
 
 Open index.html in any web browser.
+
 Fill out the forms and navigate through the pages using the provided buttons.
 
 📌 Future Enhancements
 
 🔹 Add JavaScript validation for real-time input checks.
+
 🔹 Implement a database to store user registration data.
+
 🔹 Make the design fully responsive for mobile compatibility.
+
 
 👨‍💻 Author
 Developed by Pranav Hendre 🚀
