@@ -1,4 +1,7 @@
 📌 Exam Registration System
+
+![image alt](https://github.com/PranavHendre02/Exam-registration/blob/e67354a0a5663765721fa1f5851fea451e9605b4/Exam%20Registration.png)
+
 📖 Overview
 
 The Exam Registration System is a simple yet structured web-based form designed using HTML and CSS. It allows users to register for an exam by providing their personal, address, parent, past qualification, and exam details. The system ensures a smooth registration experience with a multi-page form, navigation buttons, and important instructions.
