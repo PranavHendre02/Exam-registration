@@ -1,82 +1,43 @@
-Exam Registration System
-This project is a comprehensive Exam Registration System designed to collect and manage detailed user information in a structured way. The project is built with a focus on capturing essential details for exam registration through multiple web pages, including personal information, address, parent details, past qualifications, and exam guidelines.
+📌 Exam Registration System
+📖 Overview
+The Exam Registration System is a simple yet structured web-based form designed using HTML and CSS. It allows users to register for an exam by providing their personal, address, parent, past qualification, and exam details. The system ensures a smooth registration experience with a multi-page form, navigation buttons, and important instructions.
 
-Features
-Personal Details Page:
+🚀 Features
+🔹 Personal Details Page
+Collects Full Name, Gender, Date of Birth, Contact Details, and Email.
+Mandatory fields are marked with *.
+🔹 Address Details Page
+Captures City, State, Country, and Pincode.
+Ensures complete address submission for accurate record-keeping.
+🔹 Parent Details Page
+Gathers parent/guardian name, relation, phone number, and email.
+Essential for communication regarding the exam.
+🔹 Past Qualification Page
+Requires School/College Name, Year of Passing, Percentage, and Board/University.
+Helps validate educational eligibility.
+🔹 Exam Details Page
+Displays exam guidelines and allows users to confirm their details.
+🎯 Exclusive Features
+✅ Smooth Navigation – "Back" and "Next" buttons ensure a seamless flow through the registration steps.
+✅ Fixed Navbar – A top navigation bar allows users to jump between sections easily.
+✅ Dynamic Moving Instructions – Important notices (e.g., "Fields marked with * are mandatory") scroll below the navbar.
+✅ Footer Section – Includes © 2024 All rights reserved. for a professional touch.
 
-Collects user data like:
-Full Name
-Gender
-Date of Birth
-Father’s Name
-Mother’s Name
-Phone Number
-Email Address
-Fields marked with a * are mandatory.
-Address Details Page:
+🛠️ Technologies Used
+HTML – Structure and form elements.
+CSS – Styling, layout, and user-friendly interface.
+📌 How to Use
+Clone the repository:
+sh
+Copy
+Edit
+git clone https://github.com/your-repo-link.git
+Open index.html in any web browser.
+Fill out the forms and navigate through the pages using the provided buttons.
+📌 Future Enhancements
+🔹 Add JavaScript validation for real-time input checks.
+🔹 Implement a database to store user registration data.
+🔹 Make the design fully responsive for mobile compatibility.
 
-Collects address information, including:
-City
-State
-Country
-Pincode
-Fields marked with a * are mandatory.
-Parent Details Page:
-
-Collects information about the parent or guardian:
-Name
-Relation (Father, Mother, Guardian, etc.)
-Phone Number
-Email Address
-Fields marked with a * are mandatory.
-Past Qualification Page:
-
-Information about previous education is required:
-School/College Name
-Year of Passing
-Percentage
-Board/University
-Fields marked with a * are mandatory.
-Exam Details Page:
-
-This page provides exam guidelines and allows the user to select exam-related details.
-Guidelines are prominently displayed for user reference.
-Exclusive Features
-Navigation Buttons:
-
-Each page includes Back and Next buttons to navigate through the different sections of the form smoothly.
-Navbar:
-
-The website includes a navigation bar on the top of every page, allowing users to access any section directly from the index page.
-Footer:
-
-The footer includes the text:
-© 2024 All rights reserved.
-Moving Line Instruction:
-
-A moving line below the navigation bar gives instructions to users, such as:
-Fields marked with * are mandatory.
-This moving instruction is highlighted and moves from left to right, enhancing the user experience.
-Pages Overview
-Index Page
-
-The main page that provides navigation to all sections of the registration process.
-Includes a navbar for easy access to personal details, address, parent details, qualifications, and exam details pages.
-Personal Details Page
-
-A form for users to input their personal information.
-Address Details Page
-
-A form for users to provide their address details.
-Parent Details Page
-
-A form where users can enter parent/guardian information.
-Past Qualification Page
-
-A page dedicated to capturing the user's educational background.
-Exam Details Page
-
-Displays guidelines and allows the user to proceed with exam registration.
-Technologies Used
-HTML
-CSS
+👨‍💻 Author
+Developed by Pranav Hendre 🚀
