@@ -1,323 +1,323 @@
-<<<<<<< HEAD <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                overflow-y: hidden;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            overflow-y: hidden;
+        }
+
+        .head {
+            height: 80px;
+            background-color: rgb(253, 147, 71);
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .head h2 {
+            margin-left: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 20px;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+        .line {
+            height: 20px;
+            width: 100vw;
+            border: 2px solid red;
+            color: red;
+            font-size: 15px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .line p {
+            position: absolute;
+            animation-name: name;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            white-space: nowrap;
+            /* Prevents text from wrapping to a new line */
+            transform: translateX(-100%);
+            text-transform: uppercase;
+            /* animation-direction: alternate; */
+        }
+
+        @keyframes name {
+            0% {
+                left: 0;
             }
 
-            .head {
-                height: 80px;
-                background-color: rgb(253, 147, 71);
-                display: flex;
-                align-items: center;
-                text-transform: uppercase;
+            100% {
+                left: 100%;
             }
+        }
 
-            .head h2 {
-                margin-left: 30px;
-            }
+        .detail {
+            width: 80vw;
+            min-height: 400px;
+            border: 2px solid chocolate;
+            margin-left: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+        }
 
-            a {
-                text-decoration: none;
-                margin: 20px;
-                color: white;
-                font-size: 1.2rem;
-                text-transform: capitalize;
-            }
+        .detail label {
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            margin: 30px 0px 20px 40px;
+        }
 
-            .line {
-                height: 20px;
-                width: 100vw;
-                border: 2px solid red;
-                color: red;
-                font-size: 15px;
-                position: relative;
-                overflow: hidden;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        .detail input {
+            height: 25px;
+            border: 2px solid;
+            min-width: 190px;
+            margin: 30px 1px 20px 0px;
+        }
 
-            .line p {
-                position: absolute;
-                animation-name: name;
-                animation-duration: 15s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                white-space: nowrap;
-                /* Prevents text from wrapping to a new line */
-                transform: translateX(-100%);
-                text-transform: uppercase;
-                /* animation-direction: alternate; */
-            }
+        body {
+            background-color: antiquewhite;
+        }
 
-            @keyframes name {
-                0% {
-                    left: 0;
-                }
+        .foot {
+            width: 100vw;
+            height: 80px;
+            background-color: #37475a;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            font-size: 1.2rem;
+        }
 
-                100% {
-                    left: 100%;
-                }
-            }
+        .butt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
 
-            .detail {
-                width: 80vw;
-                min-height: 400px;
-                border: 2px solid chocolate;
-                margin-left: 20px;
-                display: inline-block;
-                margin-top: 10px;
-                align-items: center;
-                justify-content: center;
-            }
+        .but button {
+            border: 1px solid black;
+            margin: 10px;
+            background-color: rgb(253, 147, 71);
+        }
+    </style>
+</head>
 
-            .detail label {
-                text-transform: capitalize;
-                font-size: 1.2rem;
-                margin: 30px 0px 20px 40px;
-            }
-
-            .detail input {
-                height: 25px;
-                border: 2px solid;
-                min-width: 190px;
-                margin: 30px 1px 20px 0px;
-            }
-
-            body {
-                background-color: antiquewhite;
-            }
-
-            .foot {
-                width: 100vw;
-                height: 80px;
-                background-color: #37475a;
-                margin-top: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: whitesmoke;
-                font-size: 1.2rem;
-            }
-
-            .butt {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 10px;
-            }
-
-            .but button {
-                border: 1px solid black;
-                margin: 10px;
-                background-color: rgb(253, 147, 71);
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="head">
-            <h2>parents detail</h2>
+<body>
+    <div class="head">
+        <h2>parents detail</h2>
+    </div>
+    <div class="line">
+        <p>the field with "*" symbol is compulsory</p>
+    </div>
+    <div class="detail">
+        <label for="box">parent/guardian*:-</label>
+        <input type="text" name="box" id="box" placeholder="enter name">
+        <br>
+        <label for="box">relation*:-</label>
+        <input type="text" name="box" id="box" placeholder="enter relation"><br>
+        <label for="box">Email*:-</label>
+        <input type="text" name="box" id="box" placeholder="enter Email"><br>
+        <label for="code">Phone number*:-</label>
+        <input type="number" name="code" id="code" placeholder="enter Phno">
+    </div>
+    <div class="butt">
+        <div class="but">
+            <button><a href="add.html">back</a></button>
         </div>
-        <div class="line">
-            <p>the field with "*" symbol is compulsory</p>
+        <div class="but">
+            <button><a href="past.html">next</a></button>
         </div>
-        <div class="detail">
-            <label for="box">parent/guardian*:-</label>
-            <input type="text" name="box" id="box" placeholder="enter name">
-            <br>
-            <label for="box">relation*:-</label>
-            <input type="text" name="box" id="box" placeholder="enter relation"><br>
-            <label for="box">Email*:-</label>
-            <input type="text" name="box" id="box" placeholder="enter Email"><br>
-            <label for="code">Phone number*:-</label>
-            <input type="number" name="code" id="code" placeholder="enter Phno">
+    </div>
+    <footer>
+        <div class="foot">
+            <p class="ware">copyright reserved @2024</p>
         </div>
-        <div class="butt">
-            <div class="but">
-                <button><a href="add.html">back</a></button>
-            </div>
-            <div class="but">
-                <button><a href="past.html">next</a></button>
-            </div>
+    </footer>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .head {
+            height: 80px;
+            background-color: rgb(253, 147, 71);
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .head h2 {
+            margin-left: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 20px;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+        .line {
+            height: 20px;
+            width: 100vw;
+            border: 2px solid red;
+            color: red;
+            font-size: 15px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .line p {
+            position: absolute;
+            animation-name: name;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            white-space: nowrap;
+            /* Prevents text from wrapping to a new line */
+            transform: translateX(-100%);
+            text-transform: uppercase;
+            /* animation-direction: alternate; */
+        }
+
+        @keyframes name {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        .detail {
+            width: 80vw;
+            min-height: 400px;
+            border: 2px solid chocolate;
+            margin-left: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .detail label {
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            margin: 30px 0px 20px 40px;
+        }
+
+        .detail input {
+            height: 25px;
+            border: 2px solid;
+            min-width: 190px;
+            margin: 30px 1px 20px 0px;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        .foot {
+            width: 100vw;
+            height: 80px;
+            background-color: #37475a;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            font-size: 1.2rem;
+        }
+
+        .butt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .but button {
+            border: 1px solid black;
+            margin: 10px;
+            background-color: rgb(253, 147, 71);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h2>parents detail</h2>
+    </div>
+    <div class="line">
+        <p>the field with "*" symbol is compulsory</p>
+    </div>
+    <div class="detail">
+        <label for="box">parent/guardian*:-</label>
+        <input type="text" name="box" id="box" placeholder="enter name">
+        <br>
+        <label for="box">relation*:-</label>
+        <input type="text" name="box" id="box" placeholder="enter relation"><br>
+        <label for="box">Email*:-</label>
+        <input type="text" name="box" id="box" placeholder="enter Email"><br>
+        <label for="code">Phone number*:-</label>
+        <input type="number" name="code" id="code" placeholder="enter Phno">
+    </div>
+    <div class="butt">
+        <div class="but">
+            <button><a href="add.html">back</a></button>
         </div>
-        <footer>
-            <div class="foot">
-                <p class="ware">copyright reserved @2024</p>
-            </div>
-        </footer>
-    </body>
-    =======
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                border: 0;
-            }
-
-            .head {
-                height: 80px;
-                background-color: rgb(253, 147, 71);
-                display: flex;
-                align-items: center;
-                text-transform: uppercase;
-            }
-
-            .head h2 {
-                margin-left: 30px;
-            }
-
-            a {
-                text-decoration: none;
-                margin: 20px;
-                color: white;
-                font-size: 1.2rem;
-                text-transform: capitalize;
-            }
-
-            .line {
-                height: 20px;
-                width: 100vw;
-                border: 2px solid red;
-                color: red;
-                font-size: 15px;
-                position: relative;
-                overflow: hidden;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .line p {
-                position: absolute;
-                animation-name: name;
-                animation-duration: 15s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                white-space: nowrap;
-                /* Prevents text from wrapping to a new line */
-                transform: translateX(-100%);
-                text-transform: uppercase;
-                /* animation-direction: alternate; */
-            }
-
-            @keyframes name {
-                0% {
-                    left: 0;
-                }
-
-                100% {
-                    left: 100%;
-                }
-            }
-
-            .detail {
-                width: 80vw;
-                min-height: 400px;
-                border: 2px solid chocolate;
-                margin-left: 20px;
-                display: inline-block;
-                margin-top: 10px;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .detail label {
-                text-transform: capitalize;
-                font-size: 1.2rem;
-                margin: 30px 0px 20px 40px;
-            }
-
-            .detail input {
-                height: 25px;
-                border: 2px solid;
-                min-width: 190px;
-                margin: 30px 1px 20px 0px;
-            }
-
-            body {
-                background-color: antiquewhite;
-            }
-
-            .foot {
-                width: 100vw;
-                height: 80px;
-                background-color: #37475a;
-                margin-top: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: whitesmoke;
-                font-size: 1.2rem;
-            }
-
-            .butt {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 10px;
-            }
-
-            .but button {
-                border: 1px solid black;
-                margin: 10px;
-                background-color: rgb(253, 147, 71);
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="head">
-            <h2>parents detail</h2>
+        <div class="but">
+            <button><a href="past.html">next</a></button>
         </div>
-        <div class="line">
-            <p>the field with "*" symbol is compulsory</p>
+    </div>
+    <footer>
+        <div class="foot">
+            <p class="ware">© 2024 All rights reserved.</p>
         </div>
-        <div class="detail">
-            <label for="box">parent/guardian*:-</label>
-            <input type="text" name="box" id="box" placeholder="enter name">
-            <br>
-            <label for="box">relation*:-</label>
-            <input type="text" name="box" id="box" placeholder="enter relation"><br>
-            <label for="box">Email*:-</label>
-            <input type="text" name="box" id="box" placeholder="enter Email"><br>
-            <label for="code">Phone number*:-</label>
-            <input type="number" name="code" id="code" placeholder="enter Phno">
-        </div>
-        <div class="butt">
-            <div class="but">
-                <button><a href="add.html">back</a></button>
-            </div>
-            <div class="but">
-                <button><a href="past.html">next</a></button>
-            </div>
-        </div>
-        <footer>
-            <div class="foot">
-                <p class="ware">© 2024 All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
-    >>>>>>> 6e4e1be (added)
+    </footer>
+</body>
+>>>>>>> 6e4e1be (added)
 
-    </html>
+</html>
