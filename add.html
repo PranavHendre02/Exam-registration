@@ -10,7 +10,14 @@
             margin: 0;
             padding: 0;
             border: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
             overflow-x: hidden;
+            /* Restrict horizontal scrolling */
+            width: 100%;
         }
 
         .head {
@@ -35,7 +42,7 @@
 
         .line {
             height: 20px;
-            width: 100vw;
+            width: 100%;
             border: 2px solid red;
             color: red;
             font-size: 15px;
