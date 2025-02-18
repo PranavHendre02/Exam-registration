@@ -4,9 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EXAM REGISTRATION
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .exam-table {
+        width: 80%;
+        margin: 2rem auto;
+        border-collapse: collapse;
+        border: 2px solid chocolate;
+        background-color: white;
+    }
+
+    .exam-table th,
+    .exam-table td {
+        border: 1px solid chocolate;
+        padding: 10px;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .exam-table th {
+        background-color: chocolate;
+        text-transform: uppercase;
+    }
+
+    .exam-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Responsive Table */
+    @media (max-width: 600px) {
+        .exam-table {
+            width: 100%;
+        }
+
+        .exam-table th,
+        .exam-table td {
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+    }
+</style>
 
 <body>
     <div class="head">
@@ -18,7 +59,7 @@
     <div class="detail">
         <h3>Exam Guidelines</h3>
 
-        <table>
+        <table class="exam-table">
             <thead>
                 <tr>
                     <th>Guideline</th>
@@ -48,10 +89,11 @@
                 </tr>
             </tbody>
         </table>
+
     </div>
     <div class="butt">
         <div class="but">
-            <button><a href="past.html">back</a></button>
+            <a href="past.html"><button>back</button></a>
         </div>
     </div>
     <footer>
