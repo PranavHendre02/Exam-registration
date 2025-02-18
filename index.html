@@ -6,155 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXAM REGISTRATION
     </title>
-    <style>
-        * {
-            padding: 0;
-            border: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            
-            /* Restrict horizontal scrolling */
-            width: 100%;
-        }
-
-        .heading {
-            height: 80px;
-            width: 100vw;
-            background-color: chocolate;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 900;
-        }
-
-        .navbar {
-            height: 60px;
-            width: 100vw;
-            background-color: #37475a;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            margin: 20px;
-            color: white;
-            font-size: 1.2rem;
-            text-transform: capitalize;
-        }
-
-        .line {
-            height: 20px;
-            width: 100%;
-            border: 2px solid red;
-            color: red;
-            font-size: 15px;
-            position: relative;
-            overflow: hidden;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .line p {
-            position: absolute;
-            animation-name: name;
-            animation-duration: 15s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            white-space: nowrap;
-            /* Prevents text from wrapping to a new line */
-            transform: translateX(-100%);
-            text-transform: uppercase;
-            /* animation-direction: alternate; */
-        }
-
-        @keyframes name {
-            0% {
-                left: 0;
-            }
-
-            100% {
-                left: 100%;
-            }
-        }
-
-        .head {
-            height: 80px;
-            background-color: rgb(253, 147, 71);
-            display: flex;
-            align-items: center;
-            text-transform: uppercase;
-
-        }
-
-        .head h2 {
-            margin-left: 10px;
-        }
-
-        .detail {
-            width: 80vw;
-            min-height: 400px;
-            border: 2px solid chocolate;
-            display: flex;
-            margin-left: 20px;
-            margin-top: 10px;
-            /* align-items:; */
-            /* justify-content: center; */
-        }
-
-        .detail label {
-            text-transform: capitalize;
-            font-size: 1.2rem;
-            margin: 30px 0px 20px 40px;
-        }
-
-        .detail input {
-            height: 25px;
-            border: 2px solid;
-            min-width: 190px;
-            margin: 30px 1px 20px 0px;
-        }
-
-        .foot {
-            width: 100vw;
-            height: 50px;
-            background-color: #37475a;
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: whitesmoke;
-            font-size: 1.2rem;
-        }
-
-        body {
-            background-color: antiquewhite;
-        }
-
-        .butt {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .but button {
-            border: 1px solid black;
-            margin: 10px;
-            background-color: rgb(253, 147, 71);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
+main {
+    flex-grow: 1; /* Pushes footer to the bottom */
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.butt button {
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(253, 147, 71);
+    cursor: pointer;
+}
+
+.butt button a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #37475a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+    </style>
 <body>
     <header>
         <div class="heading">
@@ -178,29 +75,31 @@
         <div class="head">
             <h2>personal detail</h2>
         </div>
-        <div class="detail">
-            <form action="">
-                <label for="name">fullname*:-</label>
-                <input type="text" id="name" name="name" placeholder="enter the name" required><br>
-                <label for="name"> father fullname*:-</label>
-                <input type="text" id="name" name="name" placeholder="enter the name"><br>
-                <label for="name"> mother fullname*:-</label>
-                <input type="text" id="name" name="name" placeholder="enter the name"><br>
-                <label for="date">birth date*:-</label>
-                <input type="date" name="date" id="date"><br>
-                <label for="email">Email*:-</label>
-                <input type="email" id="email" name="email" placeholder="enter the Email address">
-                <br>
-                <div class="gender">
-                    <label for="gender">Gender*:-</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label><br>
-                </div>
-                <label for="phone">Phone Number*:-</label>
-                <input type="number" name="phone" id="phone">
-            </form>
+        <div class="detail" style="margin-top: 2rem;">
+            <div class="inner_detail">
+                <form action="">
+                    <label for="name">fullname*:-</label>
+                    <input type="text" id="name" name="name" placeholder="enter the name" required><br>
+                    <label for="name"> father fullname*:-</label>
+                    <input type="text" id="name" name="name" placeholder="enter the name"><br>
+                    <label for="name"> mother fullname*:-</label>
+                    <input type="text" id="name" name="name" placeholder="enter the name"><br>
+                    <label for="date">birth date*:-</label>
+                    <input type="date" name="date" id="date"><br>
+                    <label for="email">Email*:-</label>
+                    <input type="email" id="email" name="email" placeholder="enter the Email address">
+                    <br>
+                    <div class="gender">
+                        <label for="gender">Gender*:-</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                    </div>
+                    <label for="phone">Phone Number*:-</label>
+                    <input type="number" name="phone" id="phone">
+                </form>
+            </div>
         </div>
     </main>
     <div class="butt">
@@ -214,215 +113,3 @@
         </div>
     </footer>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXAM REGISTRATION
-    </title>
-    <style>
-        * {
-            padding: 0;
-            border: 0;
-            margin: 0;
-        }
-
-        .heading {
-            height: 80px;
-            width: 100vw;
-            background-color: chocolate;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 900;
-        }
-
-        .navbar {
-            height: 60px;
-            width: 100vw;
-            background-color: #37475a;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            margin: 20px;
-            color: white;
-            font-size: 1.2rem;
-            text-transform: capitalize;
-        }
-
-        .line {
-            height: 20px;
-            width: 100vw;
-            border: 2px solid red;
-            color: red;
-            font-size: 15px;
-            position: relative;
-            overflow: hidden;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .line p {
-            position: absolute;
-            animation-name: name;
-            animation-duration: 15s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            white-space: nowrap;
-            /* Prevents text from wrapping to a new line */
-            transform: translateX(-100%);
-            text-transform: uppercase;
-            /* animation-direction: alternate; */
-        }
-
-        @keyframes name {
-            0% {
-                left: 0;
-            }
-
-            100% {
-                left: 100%;
-            }
-        }
-
-        .head {
-            height: 80px;
-            background-color: rgb(253, 147, 71);
-            display: flex;
-            align-items: center;
-            text-transform: uppercase;
-
-        }
-
-        .head h2 {
-            margin-left: 10px;
-        }
-
-        .detail {
-            width: 80vw;
-            min-height: 400px;
-            border: 2px solid chocolate;
-            display: flex;
-            margin-left: 20px;
-            margin-top: 10px;
-            /* align-items:; */
-            /* justify-content: center; */
-        }
-
-        .detail label {
-            text-transform: capitalize;
-            font-size: 1.2rem;
-            margin: 30px 0px 20px 40px;
-        }
-
-        .detail input {
-            height: 25px;
-            border: 2px solid;
-            min-width: 190px;
-            margin: 30px 1px 20px 0px;
-        }
-
-        .foot {
-            width: 100vw;
-            height: 50px;
-            background-color: #37475a;
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: whitesmoke;
-            font-size: 1.2rem;
-        }
-
-        body {
-            background-color: antiquewhite;
-        }
-
-        .butt {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .but button {
-            border: 1px solid black;
-            margin: 10px;
-            background-color: rgb(253, 147, 71);
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <div class="heading">
-            <h1>EXAM REGISTRATION
-            </h1>
-        </div>
-        <div class="navbar">
-            <ul>
-                <a href="#"> personal detail</a>
-                <a href="add.html">address detail</a>
-                <a href="par.html">parents detail</a>
-                <a href="past.html">past qualification</a>
-                <a href="exam.html">exam details</a>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div class="line">
-            <p>the field with "*" symbol is compulsory</p>
-        </div>
-        <div class="head">
-            <h2>personal detail</h2>
-        </div>
-        <div class="detail">
-            <form action="">
-                <label for="name">fullname*:-</label>
-                <input type="text" id="name" name="name" placeholder="enter the name" required><br>
-                <label for="name"> father fullname*:-</label>
-                <input type="text" id="name" name="name" placeholder="enter the name"><br>
-                <label for="name"> mother fullname*:-</label>
-                <input type="text" id="name" name="name" placeholder="enter the name"><br>
-                <label for="date">birth date*:-</label>
-                <input type="date" name="date" id="date"><br>
-                <label for="email">Email*:-</label>
-                <input type="email" id="email" name="email" placeholder="enter the Email address">
-                <br>
-                <div class="gender">
-                    <label for="gender">Gender*:-</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label><br>
-                </div>
-                <label for="phone">Phone Number*:-</label>
-                <input type="number" name="phone" id="phone">
-            </form>
-        </div>
-    </main>
-    <div class="butt">
-        <div class="but">
-            <button><a href="add.html">next</a></button>
-        </div>
-    </div>
-    <footer>
-        <div class="foot">
-            <p class="ware">© 2024 All rights reserved.</p>
-        </div>
-    </footer>
-</body>
->>>>>>> 6e4e1be (added)
-
-</html>
